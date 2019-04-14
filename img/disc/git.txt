@@ -1,0 +1,40 @@
+Abrir Git Hub:
+
+git config --global user.name "Soledad Labrador"
+
+git config --global user.email sol.labrador@gmail.com
+
+git config --list
+
+dir
+
+cd "Coder House"
+
+dir
+
+cd "Diseño Web" (voy buscando la carpeta donde tengo el proyecto)
+
+(o voy a la carpeta en el explorador de windows y click derecho "Git Hub here")
+
+git init (tiene que aparecer master)
+
+git status (Aparece "No commits yet, untracked files..."
+
+git add .
+
+git status (Aparecen todos los files)
+
+git commit -m "Commit incial" (Pongo un mensaje para reconocer las actualizaciones que voy subiendo)
+
+git status (Aaprece "Nothing to commit...")
+
+(En este momento probar hacer algún cambio en el css y guardar por ej)
+
+git status (Aparece en rojo "modified: css/style.css - avisa que hay una modificacion que no se subio)
+
+git add .
+
+git status (Aparece en verde "modified: css/style.css)
+
+git commit -m "Actualizacion de CSS" (Pongo el mensaje que represente el cambio que subí)
+Debe aparecer cuantos files cambiaron, cuantas insertions, etc...

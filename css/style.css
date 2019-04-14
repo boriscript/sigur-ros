@@ -70,7 +70,7 @@ nav ul li:hover .sbdisco{
 
 nav ul li a:hover{
     color: gold;
-    font-weight: bold; /* Letra en negrita o robusta */
+    font-weight: bolder; /* Letra en negrita o robusta */
     background-color:rgba(0, 0, 0, 0.00);
 }
 
@@ -79,8 +79,6 @@ section #Integrantes {
     height: auto;
     min-height: 200px;
     display: block;
- 
-
 }
 
 .Intgr {
@@ -119,10 +117,10 @@ section #Integrantes {
     text-align: center;
 }
 .discs li{
-    width: 175px;
-    height: 175px;
+    width: 250px;
+    height: 250px;
     display: inline-block;
-    margin: 25px;
+    margin: 50px;
     position: relative; /*posicion relativa para q el absoluto sepa a quien asociarse*/
     border-radius: 60px;
     overflow: hidden;
@@ -143,15 +141,15 @@ section #Integrantes {
 
 .discs li .album{
     background-color: rgba(0,0,0,0.75);
-    width: 115%;
-    height: 115%;
+    width: 315px;
+    height: 315px;
     color:white;
     position: absolute;
     top:0;
-    line-height: 150px;
+    line-height: 250px;
     font-family: 'Major Mono Display', monospace;
-    font-size: 12px;
-    transform: translate(-13px,-15px) rotate(45deg);
+    font-size: 15px;
+    transform: translate(-28px,-35px) rotate(45deg);
     display: none; /*oculto*/
 }
 
