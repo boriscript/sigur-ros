@@ -7,7 +7,7 @@ html, body { /* eliminar los bordes por defecto del body */
     background-color: rgba(0, 0, 0, 0.79);
     background-image: url("../img/srmain.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 103%;
     background-position-x: 50%;
     background-attachment: fixed;
     z-index: -5;      
@@ -36,6 +36,7 @@ nav ul {
     width: 100%;
     background-color: rgba(99, 99, 99, 0.2);
     position: fixed;        /*mantiene el nav bar visible*/
+    z-index: 5;
     /*overflow: hidden;*/
 
 }
@@ -98,29 +99,42 @@ section #Integrantes {
     margin-bottom: 5px;
 }
 
+.banner {
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .discs {
     list-style: none; /*remueve bullets*/
-    margin: 0;
+    margin: 2px;
     padding: 0;
     width: 100%;
     text-align: center;
 }
 .discs li{
-    width: 250px;
-    height: 250px;
+    width: 175px;
+    height: 175px;
     display: inline-block;
     margin: 25px;
     position: relative; /*posicion relativa para q el absoluto sepa a quien asociarse*/
-    border-radius: 125px;
+    border-radius: 60px;
     overflow: hidden;
     transition: all ease 1s;
     z-index: 1;
 }
 
 .discs li:hover {
-    transform: scale(1.15);
+    transform: scale(1.10) rotate(-45deg);
     z-index: 2;
 }
+
 
 .discs li img {
     width:100%;
@@ -129,19 +143,22 @@ section #Integrantes {
 
 .discs li .album{
     background-color: rgba(0,0,0,0.75);
-    width: 100%;
-    height: 100%;
+    width: 115%;
+    height: 115%;
     color:white;
     position: absolute;
     top:0;
-    line-height: 250px;
-    font-size: 20px;
+    line-height: 150px;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 12px;
+    transform: translate(-13px,-15px) rotate(45deg);
     display: none; /*oculto*/
 }
 
-.discos li:hover .album{
-    display:block; /*pasa el mouse y abracadabra*/
+.discs li:hover .album{
+    display: block; /*pasa el mouse y abracadabra*/
 }
+
 
 footer {
     position: absolute;
