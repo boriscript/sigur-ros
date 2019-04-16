@@ -1,13 +1,16 @@
 html, body { /* eliminar los bordes por defecto del body */
     margin: 0%;
     padding: 0%;
+    position: relative;
 }
 
 .fondo-main {
+    margin: 0;
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.79);
     background-image: url("../img/srmain.jpg");
     background-repeat: no-repeat;
-    background-size: 103%;
+    background-size: 102%;
     background-position-x: 50%;
     background-attachment: fixed;
     z-index: -5;      
@@ -28,6 +31,11 @@ html, body { /* eliminar los bordes por defecto del body */
     float: left;
 }
 
+.inline-pos {
+    display: inline;
+    text-align: center;
+}
+
 nav ul {
     clear: both; /*cerrar los float anteriores */
     list-style-type: none;  /*Remueve los bullets*/
@@ -42,6 +50,8 @@ nav ul {
 }
 
 nav a {
+    margin: 0;
+    padding: 0;
     font-family: 'Anonymous Pro', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     display: block;
@@ -53,6 +63,8 @@ nav a {
 }
 
 .sbdisco {
+    border:0;
+    padding: 0;
     width: 160px;
     top: 32px;
     text-align: center;
@@ -117,8 +129,8 @@ section #Integrantes {
     text-align: center;
 }
 .discs li{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
     margin: 50px;
     position: relative; /*posicion relativa para q el absoluto sepa a quien asociarse*/
@@ -141,8 +153,8 @@ section #Integrantes {
 
 .discs li .album{
     background-color: rgba(0,0,0,0.75);
-    width: 315px;
-    height: 315px;
+    width: 255px;
+    height: 255px;
     color:white;
     position: absolute;
     top:0;
@@ -159,13 +171,17 @@ section #Integrantes {
 
 
 footer {
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    width: 100%;
     position: absolute;
     bottom: 0;
 }
 
 footer ul {
     padding: 8px;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     text-align: center;
     overflow: hidden;
@@ -174,9 +190,10 @@ footer ul {
 
 footer ul li a{
     font-family: 'Anonymous Pro',cursive;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
     color:whitesmoke;
+    /*background: radial-gradient(closest-side at 10% 50%, grey,black);*/
     height: auto;
     background-color: rgba(99, 99, 99, 0.4);
     text-decoration: solid;
