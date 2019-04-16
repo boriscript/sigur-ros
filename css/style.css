@@ -33,7 +33,7 @@ html, body { /* eliminar los bordes por defecto del body */
 }
 
 .inline-pos {
-    display: inline;
+    display: flex;
     text-align: center;
 }
 
