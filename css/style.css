@@ -32,11 +32,6 @@ html, body { /* eliminar los bordes por defecto del body */
     font-size: 20px;
 }
 
-.inline-pos {
-    display: flex;
-    text-align: center;
-}
-
 nav ul {
     clear: both; /*cerrar los float anteriores */
     list-style-type: none;  /*Remueve los bullets*/
@@ -92,7 +87,8 @@ section #Integrantes {
     width: 100%;
     height: auto;
     min-height: 200px;
-    display: block;
+    display: flex;
+    flex: wrap;
 }
 
 .Intgr {
@@ -183,24 +179,27 @@ footer {
     bottom: 0;
 }
 
-footer ul {
-    padding: 8px;
-    margin: 10px;
-    padding: 0;
-    text-align: center;
+.footer {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
     overflow: hidden;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
 }
 
-footer ul li a{
+.footicon{
     font-family: 'Anonymous Pro',cursive;
     font-size: 18px;
-    display: inline-block;
+    text-align: center;
     color:whitesmoke;
     /*background: radial-gradient(closest-side at 10% 50%, grey,black);*/
     height: auto;
     background-color: rgba(99, 99, 99, 0.4);
     text-decoration: solid;
+    align-content: flex-end;
 
 }
 
