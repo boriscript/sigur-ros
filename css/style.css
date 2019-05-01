@@ -32,12 +32,20 @@ html, body { /* eliminar los bordes por defecto del body */
     font-size: 20px;
 }
 
-nav ul {
+header {
+    height: 45px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
     clear: both; /*cerrar los float anteriores */
     list-style-type: none;  /*Remueve los bullets*/
     margin: 0;              /*Set el margen en 0*/
     padding: 0;
     width: 100%;
+    height: auto;
     background-color: rgba(99, 99, 99, 0.2);
     position: fixed;        /*mantiene el nav bar visible*/
     z-index: 5;
@@ -45,7 +53,7 @@ nav ul {
 
 }
 
-nav a {
+header nav a {
     margin: 0;
     padding: 9px;
     font-family: 'Anonymous Pro', Tahoma, Geneva, Verdana, sans-serif;
@@ -69,17 +77,46 @@ nav a {
 
 }
 
-nav ul li:hover .sbdisco{
+header nav ul li:hover .sbdisco{
     display:block;
     background-color: rgba(0, 0, 0, 0.5);
 
 }
 
-nav ul li a:hover{
+header nav ul li a:hover{
     color: gold;
     font-weight: bold; /* Letra en negrita o robusta */
     background-color:rgba(0, 0, 0, 0.00);
 }
+
+section #Inicio {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    align-content: center;
+    flex: wrap;
+}
+
+.Inicio__grid {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". gCenter .";
+}
+
+.Inicio__grid-center{
+    grid-area: gCenter;
+    background: red;
+    font-family: 'Anonymous Pro', sans-serif;
+    color: white;
+    text-align: left;
+
+}
+
+
 
 section #Integrantes {
     width: 100%;
@@ -111,6 +148,8 @@ section #Integrantes {
     height: 40px;
     padding: 0;
     margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
     color: white;
     line-height: 40px;
