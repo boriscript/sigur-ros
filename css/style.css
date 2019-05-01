@@ -2,18 +2,38 @@ html, body { /* eliminar los bordes por defecto del body */
     margin: 0%;
     padding: 0%;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.79);
+    background-image: url("../img/kveikur_back.jpg");
+    background-repeat: repeat(3);
+    background-size: 103%;
+    background-position-x: 50%;
+    background-attachment: fixed;
+    z-index: -10;
 }
 
 .fondo-main {
     margin: 0;
-    padding: ;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.79);
+    background-image: url("../img/kveikur_back.jpg");
+    background-repeat: repeat(3);
+    background-size: 103%;
+    background-position-x: 50%;
+    background-attachment: fixed;
+    z-index: -10;
+}
+
+.fondo-intgr{
+    margin: 0;
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.79);
     background-image: url("../img/srmain.jpg");
     background-repeat: repeat(3);
     background-size: 103%;
     background-position-x: 50%;
     background-attachment: fixed;
-    z-index: -10;      
+    background-attachment: -9;
+
 }
 
 .fondo-news {
@@ -26,6 +46,13 @@ html, body { /* eliminar los bordes por defecto del body */
     background-position-x: 50%;
     background-attachment: fixed;
     z-index: -7;
+}
+
+.fondo-discs {
+    margin: 0;
+    padding:0;
+    background-color: rgba(7, 7, 43, 0.897);
+    z-index: -5;
 }
 
 .active { /* Pagina Activa*/
@@ -42,6 +69,23 @@ html, body { /* eliminar los bordes por defecto del body */
     display: inline;
     float: left;
     font-size: 20px;
+}
+
+.grid {
+    display: grid;
+    padding: 15px 0px 30px 0px;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: auto;
+    grid-template-areas: ". gCenter .";
+}
+
+.grid-center{
+    grid-area: gCenter;
+    background: red;
+    font-family: 'Anonymous Pro', sans-serif;
+    color: white;
+    text-align: left;
+    padding-bottom: 15px;
 }
 
 header {
@@ -112,48 +156,6 @@ section #Inicio {
     flex: wrap;
 }
 
-.grid {
-    display: grid;
-    padding: 15px 0px 30px 0px;
-    grid-template-columns: 150px auto 150px;
-    grid-template-rows: auto;
-    grid-template-areas: ". gCenter .";
-}
-
-.grid-center{
-    grid-area: gCenter;
-    background: red;
-    font-family: 'Anonymous Pro', sans-serif;
-    color: white;
-    text-align: left;
-    padding-bottom: 15px;
-}
-
-section #Noticias {
-    margin: 0px;
-    padding: 10px 0px;
-    width: 100%;
-    height: auto;
-    min-height: 400px;
-    display: flex;
-    align-content: center;
-    flex: wrap;
-}
-
-#Noticias .grid .grid-center {
-    background-color: rgba(238, 190, 102, 0.473);
-}
-
-#Noticias h3{
-    text-align: center;
-}
-
-#Noticias p{
-    margin: 15px 10px;
-    padding: 0;
-    text-align: center;
-}
-
 section #Integrantes {
     width: 100%;
     height: auto;
@@ -177,6 +179,35 @@ section #Integrantes {
 
 .ImgIntgr {
     margin-bottom: 5px;
+}
+
+
+section #Noticias {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    display: flex;
+    align-content: center;
+    flex: wrap;
+}
+
+#Noticias .grid .grid-center {
+    margin: 0;
+    padding:0;
+    width: 100%;
+    background-color: rgba(238, 190, 102, 0.473);
+}
+
+#Noticias h3{
+    text-align: center;
+}
+
+#Noticias p{
+    margin: 15px 10px;
+    padding: 0;
+    text-align: justify;
 }
 
 .banner {
