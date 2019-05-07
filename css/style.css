@@ -51,7 +51,13 @@ html, body { /* eliminar los bordes por defecto del body */
 .fondo-discs {
     margin: 0;
     padding:0;
-    background-color: rgba(7, 7, 43, 0.897);
+    background-color: rgba(0, 0, 0, 0.79);
+    background-image: url("../img/kveikur_back.jpg");
+    background-repeat: repeat(3);
+    background-size: 103%;
+    background-position-x: 50%;
+    background-attachment: fixed;
+    filter: grayscale(60%);
     z-index: -5;
 }
 
@@ -79,12 +85,47 @@ html, body { /* eliminar los bordes por defecto del body */
     grid-template-areas: ". gCenter .";
 }
 
+.grid3 {
+    display: grid;
+    padding: 15px 0px 30px 0px;
+    grid-template: 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "gLeft gCenter gRight"
+}
+
 .grid-center{
     grid-area: gCenter;
     background: red;
     font-family: 'Anonymous Pro', sans-serif;
     color: white;
     text-align: left;
+    padding-bottom: 15px;
+}
+
+.g3Left {
+    grid-area: gLeft;
+    background: rgba(99, 99, 99, 0.78); 
+    font-family: 'Anonymous Pro', sans-serif;
+    color: white;
+    text-emphasis: justify;
+    padding-bottom: 15px;
+}
+
+.g3Center {
+    grid-area: gCenter;
+    background: rgba(99, 99, 99, 0.78);
+    font-family: 'Anonymous Pro', sans-serif;
+    color: white;
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+.g3Right {
+    grid-area: gCenter;
+    background: rgba(99, 99, 99, 0.78);
+    font-family: 'Anonymous Pro', sans-serif;
+    color: white;
+    text-align: justify;
     padding-bottom: 15px;
 }
 
@@ -159,7 +200,7 @@ section #Integrantes {
     margin: 0;
     width: 100%;
     height: auto;
-    min-height: 200px;
+    min-height: 800px;
     display: flex;
     align-content: center;
     flex: wrap;
@@ -179,6 +220,7 @@ section #Integrantes {
 
 .ImgIntgr {
     margin-bottom: 5px;
+    border-radius: 180px;
 }
 
 
