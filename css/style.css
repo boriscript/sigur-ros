@@ -235,32 +235,31 @@ section #Noticias {
     flex: wrap;
 }
 
-#Noticis .grid {
+#Noticias .grid {
     grid-template-columns: 20% auto 20%; 
 }
 
 #Noticias .grid .grid-center {
     margin: 0;
-    padding: 0px 0px 15px 0px;
+    padding: 5% 0 5% 0;
     background-color: rgba(238, 190, 102, 0.473);
 }
 
-#Noticias .grid .grid-center img{
-    width: 95%;
-    align-content: center;
-}
-
-#Noticias .grid .grid-center iframe{
-    width: 95%;
+#Noticias .grid .grid-center img,iframe {
+    width: 85%;
 }
 
 #Noticias h3{
+    font-size: 24px;
     text-decoration-line: underline;
     text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 1em;
 }
 
 #Noticias p{
-    margin: 15px 10px;
+    font-size: 20px;
+    margin: 2% 5%;
     padding: 0;
     text-align: justify;
 }
@@ -293,7 +292,7 @@ section #Discografia{
     text-align: center;
 }
 
-.discs li{
+.discs li {
     width: 200px;
     height: 200px;
     display: inline-block;
@@ -339,37 +338,6 @@ section #Contacto {
     margin: 0;
     padding:0;
     align-content: center;
-}
-
-footer {
-    margin: 0;
-    padding: 0;
-    min-height: 220px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-.footer {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.footicon{
-    font-family: 'Anonymous Pro',cursive;
-    font-size: 18px;
-    text-align: center;
-    color:whitesmoke;
-    height: auto;
-    background-color: rgba(99, 99, 99, 0.4);
-    text-decoration: solid;
-    align-content: flex-end;
-
 }
 
 .main-text {
