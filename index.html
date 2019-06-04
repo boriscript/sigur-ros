@@ -2,110 +2,205 @@
 <html lang="es">
 
 <head>
-    <title>Sigur Rós</title>
+    <title>Sigur Rós - Página no oficial</title>
     <meta charset="utf-08" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta para avisar que se adapte a mobile -->
+    <meta name="description"
+        content="Página no-oficial dedicada a la banda Sigur Ros. Suscríbete a nuestro Newsletter.">
+    <meta name="keywords" content="sigur ros, post-rock, shoegaze, banda, islandia, minimalismo">
+    <meta name="google-site-verification" content="tEM7QxlfmqeOgr6uTEPYigd8YfuRZeF8vlww9ID8gR0" />
+    <link rel="icon" type="image-png" href="img/favicon.png" />
+    <meta name="theme-color" content="#FFffff">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite|Major+Mono+Display|Anonymous+Pro"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
         integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous" />
     <!-- Fontawesome.com galeria de tipografia de estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <a name="Home"></a> <!-- Link al inicio -.-" -->
     <header>
-        <nav>
-            <ul>
-                <!-- Menu -->
-                <li class="left-pos"><a href="https://www.instagram.com/sigurros/" target="blank"><i
-                            class="fab fa-instagram" alt="Instagram de SR"></i></a></li>
-                <li class="left-pos"><a href="https://www.twitter.com/sigurros/" target="blank"><i
-                            class="fab fa-twitter" alt="Twitter de SR"></i></a></li>
-                <li class="left-pos"><a href="https://www.facebook.com/sigurros/" target="blank"><i
-                            class="fab fa-facebook" alt="Facebook de SR"></i></a></li>
-                <li class="left-pos"><a href="https://sgr.is/sr_youtube" target="blank"><i
-                            class="fab fa-youtube" alt="Youtube de SR" ></i></a>
-                </li>
-                <li class="right-pos"><a href="Contacto.html">Contacto</a></li>
-                <li class="right-pos"><a href="#Discografia">Discografía</a>
-                    <ul class="sbdisco">
-                        <li><a>Von</a></li>
-                        <li><a>Ágætis byrjun</a></li>
-                        <li><a>()</a></li>
-                        <li><a>Takk</a></li>
-                        <li><a>Hvarf/Heim</a></li>
-                        <li><a>Með suð í eyrum við spilum endalaust</a></li>
-                    </ul>
-                </li>
-                <li class="right-pos"><a href="#Noticias">Noticias</a></li>
-                <li class="right-pos"><a href="#Integrantes">Integrantes</a></li>
-                <li class="right-pos"><a href="#Home">Inicio</a></li>
-                <!-- active indica en la pagina que se encuentra cambiando la caja del boton -->
-
-            </ul>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-custom">
+            <a class="navbar-brand" href="#Home" style="font-family: 'Major Mono Display'">
+                sIGUR Rós
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Integrantes">Integrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Noticias">Noticias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Discografía</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#von">Von</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#agae">Ágætis byrjun</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#paren">()</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#takk">Takk</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#hvarf">Hvarf/Heim</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#med">Með suð í eyrum við
+                                spilum
+                                endalaust</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#valtari">Valtari</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#kveikur">Kveikur</a>
+                            <a class="dropdown-item" data-toggle="modal" data-target="#route">Route One</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-
     <section id="Inicio">
         <div class="grid">
             <div class="grid-center">
-                <p>Esta es una página orientada a introducirlos al mundo de Sigur Rós</p> <br />
-                <strong>
-                    <h4>¿Qué es Sigur Rós?</h4>
-                </strong>
-                <p>Según nuestros contribuyentes favoritos de Wikipedia los definen de la siguiente manera
-                    "Sigur Rós (Acerca de este sonido /'sɪːɣʏr rouːs/ (?·i), en islandés: «Rosa de victoria») es una
-                    banda
-                    islandesa de post-rock,
-                    con elementos de shoegazing y minimalismo. La banda es conocida por su sonido etéreo y por el
-                    falsete de
-                    voz de su cantante
-                    Jón Þór Birgisson."</p>
+                <p> Bienvenidos,
+                    Esta es una página orientada a introducirlos al mundo de Sigur Rós<br />
+                    <strong>
+                        <h4>¿Qué es Sigur Rós?</h4>
+                    </strong><br />
+
+                    "<strong>Sigur Rós</strong> (en islandés: «Rosa de victoria») es una
+                    banda islandesa de post-rock, con elementos de shoegazing y minimalismo. La banda es conocida por su
+                    sonido etéreo y por el falsete de voz de su cantante Jón Þór Birgisson.<br />
+                    <br />
+                    A finales de enero de 2010 la banda anunció un descanso indefinido hasta nuevo aviso, con el fin de
+                    seguir sus carreras en solitario y pasar más tiempo con sus familias. En 2012 retomaron la actividad
+                    con un nuevo álbum llamado Valtari. Y un año más tarde, en 2013, salió a la venta su séptimo álbum,
+                    bajo el nombre de Kveikur.<br />
+                    <br />
+                    En el verano de 2016, la banda realizó una gira de 24 hs. por toda la costa islandesa, recorriendo
+                    más
+                    de 1300 kilómetros tocando en vivo. Fue retransmitida por la televisión nacional de Islandia y pudo
+                    ser visto en todo el mundo vía YouTube. Titulado como Route One, el viaje se centró en mostrar los
+                    paisajes islandeses"
+
+                </p>
+            </div>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item" style="width:600px">
+                <center><iframe width="600px" height="500px" src="https://www.youtube.com/embed/G54tllj-SKI"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></center>
+                <h4>Sigur Ros Route One Experience</h4>
+            </div>
+            <div class="item" style="width:600px"><img src="/img/carou/1.jpg">
+                <h4>1</h4>
+            </div>
+            <div class="item" style="width:600px"><img src="/img/carou/2.jpg">
+                <h4>2</h4>
+            </div>
+            <div class="item" style="width:600px"><img src="/img/carou/3.jpg">
+                <h4>3</h4>
+            </div>
+            <div class="item" style="width:600px"><img src="/img/carou/4.jpg">
+                <h4>4</h4>
+            </div>
+            <div class="item" style="width:700px"><img src="/img/carou/5.jpg">
+                <h4>6</h4>
+            </div>
+            <div class="item" style="width:600px"><img src="/img/carou/6.jpg">
+                <h4>7</h4>
+            </div>
+            <div class="item" style="width:250px"><img src="/img/carou/7.jpg">
+                <h4>8</h4>
+            </div>
+            <div class="item" style="width:750px"><img src="/img/carou/8.jpg">
+                <h4>9</h4>
+            </div>
+            <div class="item" style="width:600px"><img src="/img/carou/9.jpg">
+                <h4>10</h4>
+            </div>
+            <div class="item" style="width:600px"><img src="/img/carou/10.jpg">
+                <h4>11</h4>
+            </div>
+            <div class="item" style="width:600px"><img src="/img/carou/11.jpg">
+                <h4>12</h4>
             </div>
         </div>
     </section>
-
     <section id="Integrantes" class="fondo-intgr">
         <div class="banner">Integrantes</div>
-        <div class="Intgr">
-            <img src="img/goggi.jpg" alt="Georg Holm" width="45%" class="ImgIntgr"> <br />
-            <strong>Georg Holm o Goggi</strong><br />
-            Es el bajista de la banda islandesa Sigur Rós. Goggi es el
-            miembro de la banda que más atención recibe por parte de la prensa inglesa e
-            internacional en general, debido a que es el que habla con mayor fluidez inglés
-            de todos los miembros de la banda.
+        <div class="grid3">
+            <div class="g3ContImgI">
+                <img src="img/goggi.jpg" alt="Georg Holm" width="50%" class="ImgIntgr">
+            </div>
+
+            <div class="g3ContImgC">
+                <img src="img/jonsi.jpg" alt="Jón Þór Birgisson" width="50%" class="ImgIntgr">
+            </div>
+
+            <div class="g3ContImgD">
+                <img src="img/orri.jpg" alt="Orri Páll Dýrason" width="50%" class="ImgIntgr">
+
+            </div>
         </div>
-        <div class="Intgr">
-            <img src="img/jonsi.jpg" alt="Jón Þór Birgisson" width="45%" class="ImgIntgr"> <br />
-            <strong>Jón «Jónsi» Þór Birgisson</strong><br />
-            Es el guitarrista y primera voz de la banda islandesa de post-rock Sigur Rós.
-            Toca la guitarra eléctrica con un arco de cello para crear el sonido característico de la banda. Su
-            estilo al cantar
-            es mayormente en falsetto. Es ciego del ojo derecho. Junto a su pareja Alex Somers ha realizado una
-            colaboración
-            artística llamada Jónsi & Alex, lanzado su libro homónimo en noviembre de 2006. En julio de 2009
-            lanzaron su primer
-            álbum llamado Riceboy Sleeps.
-            A finales de enero de 2010, Jónsi anunció que Sigur Rós estaba en "descanso indefinido," desechando los
-            planes de la
-            banda de un nuevo álbum, previamente anunciado para ser lanzado en 2010, diciendo que "no eran más que
-            rumores."
-            Volvieron a estar juntos en 2012 y lanzaron el álbum Valtari y luego el álbum Kveikur.
-        </div>
-        <div class="Intgr" class="noborder">
-            <img src="img/orri.jpg" alt="Orri Páll Dýrason" width="45%" class="ImgIntgr"> <br />
-            <strong>Orri Páll Dýrason</strong><br />
-            Es el ex-baterista de la banda islandesa Sigur Rós. Se unió a la banda en 1999 poco después de que
-            grabaron su
-            álbum Ágætis byrjun a la salida del anterior baterista Ágúst Ævar Gunnarsson. Se casó con Lukka
-            Sigurðardóttir
-            en Hawaii en 2005 y tiene una hija de una relación anterior, Vaka. Orri y Lukka viven en Mosfellsbær, no
-            lejos
-            de Reikiavik y a poca distancia del estudio de Sigur Rós, llamado Sundlaugin. Lukka y el novio de Jónsi,
-            Alex Somers forman los Toothfaeries, quienes diseñan todo el vestuario e imagen de Sigur Rós.
+        <div class="grid3">
+            <div class="g3ContI">
+                <p><strong>
+                        <center>Georg Holm o Goggi</center>
+                    </strong> </br>
+                    Es el bajista de la banda islandesa Sigur Rós. Goggi es el
+                    miembro de la banda que más atención recibe por parte de la prensa inglesa e
+                    internacional en general, debido a que es el que habla con mayor fluidez inglés
+                    de todos los miembros de la banda.</p>
+            </div>
+            <div class="g3ContC">
+                <p><strong>
+                        <center>Jón «Jónsi» Þór Birgisson</center>
+                    </strong> </br>
+                    El guitarrista y primera voz de la banda islandesa de post-rock Sigur Rós.
+                    Toca la guitarra eléctrica con un arco de cello para crear el sonido característico de la banda. Su
+                    estilo al cantar
+                    es mayormente en falsetto. Es ciego del ojo derecho. Junto a su pareja Alex Somers ha realizado una
+                    colaboración
+                    artística llamada Jónsi & Alex, lanzado su libro homónimo en noviembre de 2006. En julio de 2009
+                    lanzaron su primer
+                    álbum llamado Riceboy Sleeps.
+                    A finales de enero de 2010, Jónsi anunció que Sigur Rós estaba en "descanso indefinido," desechando
+                    los
+                    planes de la
+                    banda de un nuevo álbum, previamente anunciado para ser lanzado en 2010, diciendo que "no eran más
+                    que
+                    rumores."
+                    Volvieron a estar juntos en 2012 y lanzaron el álbum Valtari y luego el álbum Kveikur.</p>
+            </div>
+            <div class="g3ContD">
+                <p><strong>
+                        <center>Orri Páll Dýrason</center>
+                    </strong> </br>
+                    Es el ex-baterista de la banda islandesa Sigur Rós. Se unió a la banda en 1999 poco
+                    después de que grabaron su
+                    álbum Ágætis byrjun a la salida del anterior baterista Ágúst Ævar Gunnarsson. Se casó con Lukka
+                    Sigurðar dóttir
+                    en Hawaii en 2005 y tiene una hija de una relación anterior, Vaka. Orri y Lukka viven en
+                    Mosfellsbær, no
+                    lejos
+                    de Reikiavik y a poca distancia del estudio de Sigur Rós, llamado Sundlaugin. Lukka y el novio
+                    de
+                    Jónsi,
+                    Alex Somers forman los Tooth faeries, quienes diseñan todo el vestuario e imagen de Sigur Rós.
+                </p>
+            </div>
         </div>
     </section>
     <section id="Noticias" class="fondo-news">
@@ -162,58 +257,253 @@
 
 
     </section>
-
     <section id="Discografia" class="fondo-discs">
         <div class="banner">Discografía</div>
         <div class="noborder">
             <ul class="discs">
                 <li>
                     <img src="img/disc/1997von.jpg" alt="1997 - Von Album tapa" />
-                    <div class="album">1997 - Von</div>
+                    <div class="album" data-toggle="modal" data-target="#von">1997 - Von</div>
+                    <!-- Button trigger modal = data-toggle, data-target -->
                 </li>
                 <li>
                     <img src="img/disc/1999agae.jpg" alt="1999 - Ágætis byrjun tapa" />
-                    <div class="album">1999 - Ágætis byrjun</div>
+                    <div class="album" data-toggle="modal" data-target="#agae">1999 - Ágætis byrjun</div>
                 </li>
                 <li>
                     <img src="img/disc/2002().jpg" alt="2002 - () tapa" />
-                    <div class="album">2002 - ()</div>
+                    <div class="album" data-toggle="modal" data-target="#paren">2002 - ()</div>
                 </li>
                 <li>
                     <img src="img/disc/2005takk.jpg" alt="2005 - Takk tapa" />
-                    <div class="album">2005 - Takk</div>
+                    <div class="album" data-toggle="modal" data-target="#takk">2005 - Takk</div>
                 </li>
                 <li>
                     <img src="img/disc/2007hvarf.jpg" alt="2007 - Hvarf/Heim tapa" />
-                    <div class="album">2007 - Hvarf/Heim</div>
+                    <div class="album" data-toggle="modal" data-target="#hvarf">2007 - Hvarf/Heim</div>
                 </li>
                 <li>
                     <img src="img/disc/2008meo.jpg" alt="2008 - Með suð í eyrum við spilum endalaust tapa" />
-                    <div class="album">2008 - Með suð í eyrum við spilum endalaust</div>
+                    <div class="album" data-toggle="modal" data-target="#med">2008 - Með suð í eyrum við spilum
+                        endalaust</div>
                 </li>
                 <li>
                     <img src="img/disc/2012valtari.jpg" alt="2012 - Valtari tapa" />
-                    <div class="album">2012 - Valtari</div>
+                    <div class="album" data-toggle="modal" data-target="#valtari">2012 - Valtari</div>
                 </li>
                 <li>
                     <img src="img/disc/2013kveikur.jpg" alt="2013 - Kveikur tapa" />
-                    <div class="album">2013 - Kveikur</div>
+                    <div class="album" data-toggle="modal" data-target="#kveikur">2013 - Kveikur</div>
                 </li>
                 <li>
                     <img src="img/disc/2017route.jpg" alt="2017 - Route One tapa" />
-                    <div class="album">2017 - Route One</div>
+                    <div class="album" data-toggle="modal" data-target="#route">2017 - Route One</div>
                 </li>
             </ul>
         </div>
-
     </section>
-    <section id="Contacto" class="noborder" class="fondo-discs">
-        <form>
-            <label for="email">E-Mail</label>
-            <input name="email" type="email" placeholder="Ingrese su E-mail" />
-        </form>
-    </section>
+    <!-- Modal -->
+    <!-- Von -->
+    <div class="modal fade" id="von" tabindex="-1" role="dialog" aria-labelledby="vonTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/5FOHr9NAcLlF1ChHMulOMv" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ágætis byrjun -->
+    <div class="modal fade" id="agae" tabindex="-1" role="dialog" aria-labelledby="agaeTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/1DMMv1Kmoli3Y9fVEZDUVC" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- () -->
+    <div class="modal fade" id="paren" tabindex="-1" role="dialog" aria-labelledby="parenTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/3FR8CV7OSyZDnxneavnh8t" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- takk -->
+    <div class="modal fade" id="takk" tabindex="-1" role="dialog" aria-labelledby="takkTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/3sE83l3A58DipFp3EzNLiE" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hvarf -->
+    <div class="modal fade" id="hvarf" tabindex="-1" role="dialog" aria-labelledby="hvarfTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/28WGXFGJNfTHxUoIsnIYVn" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- med -->
+    <div class="modal fade" id="med" tabindex="-1" role="dialog" aria-labelledby="medTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/6gAPGWoCZTnIaqB5EMAllD" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- valtari -->
+    <div class="modal fade" id="valtari" tabindex="-1" role="dialog" aria-labelledby="valtariTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/784AinfJcPwVdpbXR4U8mN" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- kveikur -->
+    <div class="modal fade" id="kveikur" tabindex="-1" role="dialog" aria-labelledby="kveikurTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/1rRNqn4MTZfh393GzGvBtY" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- route -->
+    <div class="modal fade" id="route" tabindex="-1" role="dialog" aria-labelledby="routeTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content" style="background-color:#aaaaaa2d">
+                <div class="modal-body">
+                    <center><iframe src="https://open.spotify.com/embed/album/6gmiDFx1NWpP0zCXSnqZZe" width="300"
+                            height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <section id="Contacto" class="noborder" , style="background: rgba(0,0,0,0.95)">
+        <div class="banner" , style="background: rgba(100,100,100, 0.95)" z-index="-2">Contacto</div>
+        <h3>
+            <u>Suscríbase a nuestro Newsletter</u>
+        </h3>
+
+        <div class="grid2">
+            <div class="g2I">
+                <p>No pierdas oportunidad de sumarte a nuestra comunidad. <br /> Apoya nuestro site y mandanos tus
+                    recomendaciones</p>
+                Dejanos tus datos para enterarte de nuestras novedades, recibir ofertas y participar de concursos.
+            </div>
+            <div class="g2D">
+                <div class="form-group">
+                    <input class="form-control" name="name" type="text" placeholder="Ingrese su nombre" /> <br />
+                    <input class="form-control" name="lastname" type="text" placeholder="Ingrese su apellido" /><br />
+                    <input class="form-control" name="email" type="email" placeholder="Ingrese su E-mail" /><br />
+                    <textarea class="form-control" name="Comentarios" cols="10" rows="5"></textarea> <br />
+                    <button type="submit" class="btn btn-light" action="mailto:boris.bdc@gmail.com" method="post"
+                        enctype="text/plain">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="grid-center">
+                <p style="font-size: 20px">
+                    <center>También puedes seguirnos en nuestras redes sociales</center>
+                </p>
+                <ul>
+                    <li><a href="https://www.instagram.com/sigurros/" target="blank"><i class="fab fa-instagram"
+                                alt="Instagram de SR"></i></a></li>
+                    <li><a href="https://www.twitter.com/sigurros/" target="blank"><i class="fab fa-twitter"
+                                alt="Twitter de SR"></i></a></li>
+                    <li><a href="https://www.facebook.com/sigurros/" target="blank"><i class="fab fa-facebook"
+                                alt="Facebook de SR"></i></a></li>
+                    <li><a href="https://sgr.is/sr_youtube" target="blank"><i class="fab fa-youtube"
+                                alt="Youtube de SR"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <!-- Inserte Scripts aquí -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- owl -->
+    <script src="/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js" type="text/javascript"></script>
+    <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            margin: 10,
+            loop: true,
+            autoWidth: true,
+            items: 4
+        })
+    </script>
 </body>
 
 </html>
